@@ -1,0 +1,50 @@
+.paginator-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .page-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        p {
+            width: 25%;
+            & .selected {
+                color: rgb(47, 255, 0);
+            }
+        }
+    }
+    .pages-arrow {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        p {
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+    ul {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        li {
+            width: auto;
+            padding: 16px;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.4);
+            }
+            p {
+                font-size: 20px;
+                &.active {
+                    color: red;
+                }
+            }
+        }
+    }
+}

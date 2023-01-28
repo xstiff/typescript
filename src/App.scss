@@ -12,6 +12,14 @@ body,
         display: flex;
         flex-direction: column;
         position: relative;
+        text-align: center;
+        .response-error {
+            // position: absolute;
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+            width: 100%;
+        }
 
         .header-container {
             width: 100%;
@@ -27,6 +35,8 @@ body,
             // background-color: yellow;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
 
             .search-btn {
                 border: none;
@@ -34,6 +44,11 @@ body,
                 width: 3rem;
                 text-align: center;
                 cursor: pointer;
+            }
+
+            .error-message {
+                color: red;
+                flex-basis: 100%;
             }
 
             input {
